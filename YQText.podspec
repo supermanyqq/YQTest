@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YQText'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YQText.'
+  s.summary          = 'YQText is a rich text framework.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,9 +28,10 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/supermanyqq/YQText.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '14.5'
 
-  s.source_files = 'YQText/Classes/**/*'
+  s.source_files = 'Source/**/*'
+  s.swift_version = ['5.0']
   
   # s.resource_bundles = {
   #   'YQText' => ['YQText/Assets/*.png']

@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1EACFD478C2DAA0798F09F99 /* Pods-YQText_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQText_Tests.release.xcconfig"; path = "Target Support Files/Pods-YQText_Tests/Pods-YQText_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2020376E091772F543A63DE6 /* YQText.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YQText.podspec; path = ../YQText.podspec; sourceTree = "<group>"; };
+		2020376E091772F543A63DE6 /* YQText.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YQText.podspec; path = ../YQText.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3EDC8A9FD1BC9639DA49E91C /* Pods-YQText_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQText_Example.release.xcconfig"; path = "Target Support Files/Pods-YQText_Example/Pods-YQText_Example.release.xcconfig"; sourceTree = "<group>"; };
 		58DA6766D3BACF13A6F125B8 /* Pods-YQText_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQText_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YQText_Tests/Pods-YQText_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YQText_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQText_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,10 +42,10 @@
 		607FACE51AFB9204008FA782 /* YQText_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQText_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		757F55C8381AB3C434E4A835 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		757F55C8381AB3C434E4A835 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		76765C7D7693F500E9E0E08A /* Pods-YQText_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQText_Example.debug.xcconfig"; path = "Target Support Files/Pods-YQText_Example/Pods-YQText_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		902462DD0537013A55611C4E /* Pods_YQText_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQText_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB554FA4094C3B72A26DE2A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AB554FA4094C3B72A26DE2A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B039BC91B612E11597C434F7 /* Pods_YQText_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQText_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				58DA6766D3BACF13A6F125B8 /* Pods-YQText_Tests.debug.xcconfig */,
 				1EACFD478C2DAA0798F09F99 /* Pods-YQText_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -500,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YQText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -515,6 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YQText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

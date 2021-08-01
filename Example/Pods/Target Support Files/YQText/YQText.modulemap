@@ -1,0 +1,6 @@
+framework module YQText {
+  umbrella header "YQText-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import YQText
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let str = NSMutableAttributedString(string: "324324")
+        str.yq_setFont(.systemFont(ofSize: 12), range: NSRange(location: 0, length: str.length))
     }
 
     override func didReceiveMemoryWarning() {
